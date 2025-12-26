@@ -12,11 +12,6 @@ Install as you install any package as SPM
 
 In Appdelegate
 
-import FontGuard
-
-func application(_ application: UIApplication,
-                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
     // Define your approved font list
     FontGuard.allowedFonts = [
         "SFProText-Regular",
@@ -25,8 +20,9 @@ func application(_ application: UIApplication,
         "SFProText-Medium"
     ]
 
-    // Enable auditing
+    // Enable font auditing during development
     FontGuard.enabled = true
 
-    return true
-}
+    // Disable FontGuard auditing for any specific UI element in ViewController
+    label.fontGuardEnabled = false
+
