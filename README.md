@@ -1,10 +1,12 @@
 # FontGuard
 FontGuard is a lightweight iOS dev-tool that automatically audits fonts across your app at runtime and highlights any UILabel, UIButton, or UITextView using a non-approved font.
-What It Does
 
+What It Does
 • Automatically scans every screen
-• Highlights wrong fonts with red border
-• Zero code changes per screen
+• Highlights invalid fonts with a red border
+• Requires zero per-screen code changes
+• Helps enforce brand typography rules
+• Works silently in the background
 
 Install as you install any package as SPM
 
